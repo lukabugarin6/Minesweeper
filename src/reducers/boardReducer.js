@@ -29,7 +29,6 @@ export function boardReducer (state, { type, payload }) {
         board: uncoverCell(state.board, payload.row, payload.column),
         gameClear: didGameClear(uncoverCell(state.board, payload.row, payload.column)),
       };
-
     case BoardActions.DOUBLE_CLICK_CELL:
       return {
         ...state,
@@ -153,6 +152,7 @@ function uncoverCell(originalBoard, row, column) {
   return newBoard;
 }
 
+
 function toggleFlagCell(originalBoard, row, column) {
   const newBoard = JSON.parse(JSON.stringify(originalBoard));
   newBoard[row][column].flagged = !newBoard[row][column].flagged;
@@ -160,7 +160,6 @@ function toggleFlagCell(originalBoard, row, column) {
 }
 
 function uncoverAdjacentCells(originalBoard, row, column) {
-
   const memo = {};
   const stack = [{ cell: originalBoard[row][column], row, column }];
 

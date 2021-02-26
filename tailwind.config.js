@@ -7,12 +7,15 @@ module.exports = {
         'primary' : ['']
       },
       colors: {
-        'primary' : '',
-        'secondary' : '',
-        'tertiary' : '',
-        'quaternary' : '',
-        'quinary' : '',
+        'primary' : '#2C3531',
+        'secondary' : '#116466',
+        'tertiary' : '#D9B08C',
+        'quaternary' : '#FFCB9A',
+        'quinary' : '#D1E8E2',
       },
+      borderWidth: {
+        '1' : '1px'
+      }
     },
   },
   variants: {

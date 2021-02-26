@@ -1,9 +1,9 @@
 export const GameLevel = Object.freeze({
   EASY: {
     name: "EASY",
-    rows: 10,
-    columns: 10,
-    num_mine: 12,
+    rows: 8,
+    columns: 8,
+    num_mine: 10,
   },
   INTERMEDIATE: {
     name: "INTERMEDIATE",
