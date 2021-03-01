@@ -36,7 +36,7 @@ const CustomSelect = ({ defText, optList, state, onLevelSelect }) => {
     <>
       <div className="custom-select-container w-36 text-xs lg:text-sm">
         <div
-          className={`flex justify-between items-center p-1.5 lg:p-2 ${showOptionsList ? 'selected-text active' : 'selected-text'}`}
+          className={`flex justify-between items-center p-1.5 lg:p-2 lg:pl-4 ${showOptionsList ? 'selected-text active' : 'selected-text'}`}
           onClick={handleListDisplay}
         >
           {defaultSelectText} <span className='ml-1 text-xl'><AiFillCaretDown /></span> 
