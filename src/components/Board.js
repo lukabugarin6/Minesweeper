@@ -26,14 +26,20 @@ const Board = () => {
             ? "opacity-100 translate-y-24"
             : "opacity-0 translate-y-96"
         } text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl absolute -top-0 left-1/2 transform -translate-x-1/2`}
+        style={{ pointerEvents: "none" }}
       >
         GAME OVER
       </h1>
-    <h1 className={`text-green-400 font-bold transition-all duration-1000 transform ${
+      <h1
+        className={`text-green-400 font-bold transition-all duration-1000 transform ${
           state.gameClear
             ? "opacity-100 translate-y-24"
             : "opacity-0 translate-y-96"
-        } text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl absolute -top-0 left-1/2 transform -translate-x-1/2`}>YOU WON</h1>
+        } text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl absolute -top-0 left-1/2 transform -translate-x-1/2`}
+        style={{ pointerEvents: "none" }}
+      >
+        YOU WON
+      </h1>
       <div
         className="grid w-min mx-auto pb-20 px-4"
         style={{
